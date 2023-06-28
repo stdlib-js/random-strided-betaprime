@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-strided-betaprime",
-  "version": null,
+  "version": "0.0.0",
   "description": "Fill a strided array with pseudorandom numbers drawn from a beta prime distribution.",
   "license": "Apache-2.0",
   "author": {
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@stdlib/array-base-linspace": "^0.0.3",
-    "@stdlib/array-base-to-accessor-array": "^github:stdlib-js/array-base-to-accessor-array#main",
+    "@stdlib/array-base-to-accessor-array": "^0.0.1",
     "@stdlib/array-base-zero-to": "^0.0.6",
     "@stdlib/array-filled": "^0.0.6",
     "@stdlib/array-filled-by": "^0.0.2",
