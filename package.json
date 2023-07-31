@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-strided-betaprime",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Fill a strided array with pseudorandom numbers drawn from a beta prime distribution.",
   "license": "Apache-2.0",
   "author": {
