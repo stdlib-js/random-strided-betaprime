@@ -31,13 +31,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import betaprime from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-strided-betaprime/tags). For example,
+
+```javascript
 import betaprime from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@v0.0.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@v0.0.1-deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@deno/mod.js';
 ```
 
 #### betaprime( N, alpha, sa, beta, sb, out, so\[, options] )
@@ -183,7 +188,7 @@ The function accepts the same `options` as documented above for `betaprime()`.
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import betaprime from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@v0.0.1-deno/mod.js';
+import betaprime from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@deno/mod.js';
 
 // Specify a PRNG seed:
 var opts = {
