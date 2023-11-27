@@ -41,7 +41,7 @@
     "@stdlib/random-base-betaprime": "^0.1.0",
     "@stdlib/strided-base-binary": "^0.1.0",
     "@stdlib/strided-base-nullary": "^0.1.0",
-    "@stdlib/types": "^0.1.0",
+    "@stdlib/types": "^0.2.0",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1"
   },
   "devDependencies": {
@@ -50,9 +50,9 @@
     "@stdlib/array-base-zero-to": "^0.1.0",
     "@stdlib/array-filled": "^0.1.0",
     "@stdlib/array-filled-by": "^0.1.0",
-    "@stdlib/array-float64": "^0.1.0",
+    "@stdlib/array-float64": "^0.1.1",
     "@stdlib/array-zeros": "^0.1.0",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/console-log-each": "^0.1.0",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-assert-is-nanf": "^0.1.1",
