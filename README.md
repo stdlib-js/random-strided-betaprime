@@ -35,32 +35,38 @@ limitations under the License.
 
 > Fill a strided array with pseudorandom numbers drawn from a [beta prime][@stdlib/random/base/betaprime] distribution.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-strided-betaprime
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var betaprime = require( '@stdlib/random-strided-betaprime' );
+betaprime = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var betaprime = require( 'path/to/vendor/umd/random-strided-betaprime/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.betaprime;
+})();
+</script>
 ```
 
 #### betaprime( N, alpha, sa, beta, sb, out, so\[, options] )
@@ -202,11 +208,16 @@ The function accepts the same `options` as documented above for `betaprime()`.
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var zeros = require( '@stdlib/array-zeros' );
-var zeroTo = require( '@stdlib/array-base-zero-to' );
-var logEach = require( '@stdlib/console-log-each' );
-var betaprime = require( '@stdlib/random-strided-betaprime' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-betaprime@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Specify a PRNG seed:
 var opts = {
@@ -230,6 +241,11 @@ betaprime( x2.length, [ 2.0 ], 0, [ 5.0 ], 0, x2, 1, opts );
 
 // Print the array contents:
 logEach( 'x1[%d] = %.2f; x2[%d] = %.2f', idx, x1, idx, x2 );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -325,13 +341,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/random/base/betaprime]: https://github.com/stdlib-js/random-base-betaprime
+[@stdlib/random/base/betaprime]: https://github.com/stdlib-js/random-base-betaprime/tree/umd
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/betaprime]: https://github.com/stdlib-js/random-array-betaprime
+[@stdlib/random/array/betaprime]: https://github.com/stdlib-js/random-array-betaprime/tree/umd
 
 <!-- </related-links> -->
 
