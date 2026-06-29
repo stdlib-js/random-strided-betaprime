@@ -41,7 +41,7 @@
     "@stdlib/random-base-betaprime": "^0.2.2",
     "@stdlib/strided-base-binary": "^0.3.1",
     "@stdlib/strided-base-nullary": "^0.3.1",
-    "@stdlib/types": "^0.4.3",
+    "@stdlib/types": "^0.5.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
   },
   "devDependencies": {
